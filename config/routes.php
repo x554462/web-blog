@@ -6,7 +6,7 @@ Route::get('/', 'HomeController@home');
 Route::any('foo', function () {
     echo "Foo!";
 });
-Route::get('/test', $callback);
+// Route::get('/test', $callback);
 
 Route::filter(function () {
     return isset($_GET['token']) && $_GET['token'] == 1;
