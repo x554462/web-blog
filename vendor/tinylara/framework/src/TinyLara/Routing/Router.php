@@ -71,7 +71,7 @@ class Router {
         $uri = self::detect_uri();
         $method = $_SERVER['REQUEST_METHOD'];
         
-        var_dump($method);
+        var_dump($uri);
         
         $searches = array_keys(static::$patterns);
         $replaces = array_values(static::$patterns);
