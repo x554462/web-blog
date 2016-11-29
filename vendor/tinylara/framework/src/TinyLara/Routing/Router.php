@@ -70,6 +70,7 @@ class Router {
     public static function dispatch($after = null) {
         $uri = self::detect_uri();
         $method = $_SERVER['REQUEST_METHOD'];
+        
         var_dump($method);
         
         $searches = array_keys(static::$patterns);
